@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "634098741000",
+    "firebase_url": "https://malbud2-f0c98.firebaseio.com",
+    "project_id": "malbud2-f0c98",
+    "storage_bucket": "malbud2-f0c98.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:634098741000:android:2cf56f4f5ca46af1a8c6bd",
+        "android_client_info": {
+          "package_name": "com.example.malbud2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "634098741000-0qfl53sjjgtel7k1eau91i8b3m7v5ech.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.malbud2",
+            "certificate_hash": "a904a6219c6eccc8fa4e10711fc11f7ef389f2d9"
+          }
+        },
+        {
+          "client_id": "634098741000-ds4828q290iekkktvqdpgquecdclpkpo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_kcGG_69x9Xnmo1ZfCWFXkqvTde3C3Ks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "634098741000-ds4828q290iekkktvqdpgquecdclpkpo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
