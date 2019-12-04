@@ -21,6 +21,7 @@ import com.example.malbud2.Gedung.GedungViewHolder;
 import com.example.malbud2.Gedung.ItemClickListener;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.android.gms.common.internal.service.Common;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
@@ -31,6 +32,8 @@ public class HomeActivity extends AppCompatActivity {
 
     FirebaseDatabase database;
     DatabaseReference gedung;
+
+    public static String categoryId, categoryName;
 
     public static HomeActivity newInstances()
     {
@@ -76,9 +79,8 @@ public class HomeActivity extends AppCompatActivity {
                     @Override
                     public void onClick(View view, int position, boolean isLongClick) {
 
-                        Intent startGame = new Intent(view.getContext() ,Start.class);
-                        Common.categoryId = adapter.getRef(position).getKey();
-                        Common.categoryName = model.getName();
+                        Intent startGame = new Intent(HomeActivity.this, LihatActivity.class);
+                        categoryId = adapter.getRef(position).getKey();
                         startActivity(startGame);
                     }
                 });
