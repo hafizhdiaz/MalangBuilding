@@ -1,24 +1,40 @@
-package com.example.malbud2.Gedung;
+package com.example.malbud2.Lihat;
 
 import com.google.firebase.database.Exclude;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class Gedung {
-    private String Name, Alamat, Fasilitas, Kapasitas, Harga;
-    private String Image;
+public class Lihat {
+    private String Name, Image, Alamat, Fasilitas, Kapasitas, Harga;
 
-    public Gedung(){
+
+    public Lihat(){
 
     }
 
-    public Gedung(String name, String alamat, String fasilitas, String kapasitas, String harga, String image) {
+    public Lihat(String name, String image, String alamat, String fasilitas, String kapasitas, String harga) {
         Name = name;
+        Image = image;
         Alamat = alamat;
         Fasilitas = fasilitas;
         Kapasitas = kapasitas;
         Harga = harga;
+    }
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public String getImage() {
+        return Image;
+    }
+
+    public void setImage(String image) {
         Image = image;
     }
 
@@ -52,22 +68,6 @@ public class Gedung {
 
     public void setHarga(String harga) {
         Harga = harga;
-    }
-
-    public String getName() {
-        return Name;
-    }
-
-    public void setName(String name) {
-        Name = name;
-    }
-
-    public String getImage() {
-        return Image;
-    }
-
-    public void setImage(String image) {
-        Image = image;
     }
 
     @Exclude

@@ -54,8 +54,7 @@ public class HomeActivity extends AppCompatActivity {
         listGedung.setHasFixedSize(true);
         listGedung.setLayoutManager(new GridLayoutManager(this, 1));
 
-        FirebaseRecyclerOptions<Gedung> options =
-                new FirebaseRecyclerOptions.Builder<Gedung>()
+        FirebaseRecyclerOptions<Gedung> options = new FirebaseRecyclerOptions.Builder<Gedung>()
                         .setQuery(gedung, Gedung.class)
                         .build();
 
@@ -80,8 +79,14 @@ public class HomeActivity extends AppCompatActivity {
                     public void onClick(View view, int position, boolean isLongClick) {
 
                         Intent startGame = new Intent(HomeActivity.this, LihatActivity.class);
-                        categoryId = adapter.getRef(position).getKey();
+                        startGame.putExtra("nama", model.getName());
+                        startGame.putExtra("alamat", model.getAlamat());
+                        startGame.putExtra("fasilitas", model.getFasilitas());
+                        startGame.putExtra("harga", model.getHarga());
+                        startGame.putExtra("kapasitas", model.getKapasitas());
+                        startGame.putExtra("image", model.getImage());
                         startActivity(startGame);
+
                     }
                 });
             }

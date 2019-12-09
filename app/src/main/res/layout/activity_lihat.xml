@@ -13,6 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:text="Image"
+        android:src="@mipmap/ic_launcher"
         />
     <TextView
         android:id="@+id/category_name1"
@@ -20,6 +21,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/dark"
         android:textSize="20sp"
+        android:layout_marginLeft="20dp"
         android:text="Name"
         android:layout_marginTop="205dp"
         />
@@ -28,7 +30,38 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/dark"
+        android:layout_marginLeft="20dp"
         android:text="Alamat"
         android:layout_marginTop="235dp"
+        />
+    <TextView
+        android:id="@+id/category_name3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:text="Harga"
+        android:layout_marginTop="285dp"
+        />
+    <TextView
+        android:id="@+id/category_name4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:text="Fasilitas"
+        android:layout_marginTop="315dp"
+        />
+    <TextView
+        android:id="@+id/category_name5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/dark"
+        android:textSize="20sp"
+        android:layout_marginLeft="20dp"
+        android:text="Kapasitas"
+        android:layout_marginTop="345dp"
         />
 </RelativeLayout>
